@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const screenWidth = window.innerWidth - 2 * marginSize;
   const screenHeight = window.innerHeight - 2 * marginSize;
 
+  //Initialize participant vars and targets
   let targetIndex = 0;
   let lastClickTime = performance.now();
   let lastTargetX, lastTargetY;
   let participantID = null;
   let handPreference = null;
 
-  // Apply a more elegant sans-serif font to the entire document
   document.body.style.fontFamily = "'Arial', 'Helvetica', sans-serif";
 
   const experimentArea = document.createElement("div");
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   footer.style.alignItems = "center";
   footer.style.backgroundColor = "#f8f8f8";
   footer.style.borderTop = "1px solid #333";
-  footer.textContent = "Developed by BLA with inspiration from BLA and help from ChatGPT";
+  footer.textContent = "Developed by SR with inspiration from http://simonwallner.at/ext/fitts/ and assistance from ChatGPT";
   document.body.appendChild(footer);
 
   const surveyForm = document.createElement("form");
